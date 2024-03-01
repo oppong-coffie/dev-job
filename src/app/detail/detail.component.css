@@ -1,0 +1,316 @@
+.scoot-main{
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-top: -40px;
+}
+.company-container{
+    display: flex;
+border-radius: 25px;
+width: 100%;
+background-color: white;
+}
+
+.dark-company-container{
+    color: white;
+    background-color: rgb(25, 32, 33);
+}
+
+.company-name{
+width: 17%;
+padding: 27px;
+border-radius: 0px 0px 0px 20px;
+}
+
+.website{
+    background-color: white;
+    width: 60%;
+    padding-left: 5%;
+    padding-top: 6%;
+}
+.dark-website{
+    background-color: rgb(25, 32, 33);
+    color: white;
+}
+.com{
+    display: flex;
+}
+
+.company-site{
+    background-color: white;
+    width: 20%;
+    border-radius: 0px 15px 15px 0px;
+    padding-top: 7%;
+}
+.dark-company-site{
+    background-color: rgb(25, 32, 33);
+    color: white;
+}
+
+.company-site>button{
+    border: none;
+    background-color: rgb(157, 174, 194);
+    color: rgb(36, 36, 253);
+    font-size: 21px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 8px;
+}
+.info{
+    margin-top: 35px;
+}
+.position{
+    color: rgb(18, 23, 33);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.dark-position{
+    color: white;
+}
+.at{
+    color: rgb(157, 174, 194);
+}
+.loc{
+    color: rgb(29, 29, 253);
+}
+
+.detail-content{
+    background-color: white;
+    margin-top: 32px;
+    padding: 30px;
+}
+.dark-content{
+    background-color: rgb(25, 32, 33);
+    color: rgb(157, 174, 194);
+}
+.applyNow>button{
+    border: none;
+    color: white;
+    background-color: blue;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.dark-mode{
+    background-color: rgb(25, 32, 33);
+}
+.apply>button{
+    border: none;
+    color: white;
+    background-color: blue;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.apply{
+    border: none;
+    color: white;
+    background-color: blue;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.dark-apply{
+    background-color: rgb(99, 99, 253);
+}
+.times{
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    background-color: white;
+    margin-left: -70%;
+    margin-right: -70%;
+    margin-top: 57px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.dark-footer{
+    background-color: rgb(25, 32, 33);
+    color: white;
+}
+.footer{
+    display: flex;
+    padding-left: 30%;
+    gap: 30%;
+}
+
+/* Tablet styles (up to 768px) */
+@media only screen and (max-width: 1024px) {
+    .scoot-main{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .website{
+        width: 45%;
+    }
+    
+    .company-site{
+        width: 35%;
+    }
+    
+    .company-site>button{
+      
+        font-size: 30px;
+        font-weight: 700;
+        padding: 11px;
+    }
+
+    .info{
+        margin-top: 45px;
+    }
+
+    .text{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 41px;
+    }
+    .position{
+        color: rgb(18, 23, 33);
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .at{
+        color: rgb(157, 174, 194);
+    }
+    .loc{
+        color: rgb(29, 29, 253);
+    }
+    .detail-content{
+        background-color: white;
+        margin-top: 32px;
+        padding: 30px;
+    }
+    .dark-content{
+        background-color: rgb(25, 32, 33);
+        color: rgb(157, 174, 194);
+    }
+    .applyNow>button{
+        padding: 15px;
+        font-size: 29px;
+    }
+
+    .dark-apply{
+        background-color: rgb(99, 99, 253);
+    }
+
+    footer{
+        margin-left: -5%;
+        margin-right: -5%;
+    }
+
+    .footer{
+        display: flex;
+        padding-left: 3%;
+        gap: 15%;
+    }
+}
+
+
+/* Phone styles (up to 576px) */
+@media only screen and (max-width: 768px) {
+    .scoot-main{
+        padding-left: 7%;
+        padding-right: 7%;
+        margin-top: -40px;
+    }
+    .company-container{
+        display: block;
+        padding-left: 35%;
+}
+    
+    .company-name{
+        padding-top: 5%;
+        padding-left: 3%;
+        padding-bottom: 5%;
+        padding-right: 3%;
+        border-radius: 15px 15px 15px 15px;
+        position: absolute;
+        top: 110px;
+        width: 20%;
+        
+    }
+
+    .website{
+        background-color: white;
+        width: 60%;
+        padding-left: 5%;
+        padding-top: 6%;
+    }
+    .dark-website{
+        background-color: rgb(33, 27, 25);
+        color: white;
+    }
+    .website>h4{
+        font-size: 32px;
+        font-weight: 700;
+        margin-top: 35px;
+    }
+    .website>span{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .com{
+        display: flex;
+        font-size: 72px;
+
+    }
+    
+    .company-site{
+        width: 100%;
+    }
+    .company-site>button{
+        padding: 50px;
+    }
+    .text{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 24px;
+    }
+
+    .company-site>button{
+        border: none;
+        background-color: rgb(157, 174, 194);
+        color: rgb(36, 36, 253);
+        font-size: 21px;
+        font-weight: 600;
+        border-radius: 5px;
+        padding: 8px;
+    }
+
+
+    .times{
+        display: block;
+    }
+    .position{
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
+    
+    .applyNow>button{
+        background-color: rgb(106, 106, 250);
+        padding: 15px;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    footer{
+        margin-left: -7%;
+        margin-right: -7%;
+    }
+  
+    .footer{
+        display: block;
+        padding-left: 4 l%;
+        gap: 0%;
+    }
+    .ftop{
+        display: none;
+    }
+  
+}

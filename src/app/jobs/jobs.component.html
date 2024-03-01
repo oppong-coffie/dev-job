@@ -1,0 +1,14 @@
+<div class="container-jobs">
+    <div class="job1 card"  *ngFor="let job of jobsData" [ngClass]="{'dark-card': isDarkMode$ | async}">
+            <a [routerLink]="['/detail', job.id]">
+    <div class="">
+        <span><img class="icon1" style="background-color: {{job.logoBackground}};" src={{job.logo}} alt=""></span>
+          <p class="at">{{job.postedAt}} . <span> {{job.contract}}</span></p>
+         <h4 class="job-title" [ngClass]="{'dark-position': isDarkMode$ | async}">{{job.position}}</h4>
+          <p class="company">{{job.company}}</p>
+    <h5 class="country">{{job.location}}</h5>
+    </div>
+</a>
+    </div>
+
+</div>

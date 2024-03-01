@@ -1,0 +1,74 @@
+.container-jobs{
+   
+}
+.job1{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    padding-left: 25px;
+}
+.icon1{
+    border-radius: 5px;
+    margin-top: -15px;
+    padding: 12px;
+    color: white;
+    margin-bottom: 30px;
+
+}
+.container-jobs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.dark-companyname{
+    background-color: rgb(25, 32, 45);
+}
+.country{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #531fff;
+}
+.dark-card{
+    background-color: rgb(25, 32, 45);
+}
+.job-title{
+    color: rgb(18, 23, 33);
+    text-decoration: none;
+    font-weight: 700;
+}
+.job-title:hover{
+    color: rgb(110, 128, 152);
+}
+a{
+    text-decoration: none;
+}
+.at{
+    color: rgb(110, 128, 152);
+    font-weight: 400;
+}
+.company{
+    color: rgb(110, 128, 152);
+}
+.dark-position{
+    color: white;
+}
+
+
+/* Tablet styles (up to 768px) */
+@media only screen and (max-width: 768px) {
+
+    .job1{
+        width: 46%;
+        padding-left: 15px;
+    }
+    .icon1{
+        padding: 17px;  
+    }
+}
+
+/* Phone styles (up to 576px) */
+@media only screen and (max-width: 576px) {
+    .job1{
+        width: 100%;
+        padding-left: 40px;
+    }
+}

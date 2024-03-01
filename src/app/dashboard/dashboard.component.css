@@ -1,0 +1,48 @@
+.div{
+
+}
+
+.dark-mode{
+    background-color: black !important;
+}
+.filters-div{
+    margin-top: -30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.jobs{
+    margin-top: 100px;
+    margin-left: 170px;
+    margin-right: 140px;
+}
+
+
+
+/* Tablet styles (up to 768px) */
+@media only screen and (max-width: 768px) {
+    .filters-div {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .jobs {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+
+/* Phone styles (up to 576px) */
+@media only screen and (max-width: 576px) {
+    .filters-div {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .jobs {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+

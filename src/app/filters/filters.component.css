@@ -1,0 +1,66 @@
+.main-filter{
+    display: flex;
+    gap: 1px;
+    
+}
+.bytitle{
+    width: 33.33%;
+    border-radius: 10px 0px 0px 10px;
+    background-color: white;
+}
+.bylocation{
+        width: 33.33%;
+        background-color: white;
+
+}
+.byfulltime{
+        width: 33.33%;
+        border-radius: 0px 10px 10px 0px;
+        background-color: white;
+}
+.dark-mode{
+    background-color: rgb(25, 32, 45);
+}
+.input{
+    border: none;
+    width: 70%;
+}
+input{
+    border: none;
+}
+.full{
+    display: flex;
+    justify-content: space-between;
+    color:rgb(25, 32, 45);
+    font-size: 30px;
+    font-weight: 700;
+}
+.fulltime{
+    margin-left: 27px;
+}
+input[type="checkbox"] {
+    transform: scale(2); /* Increase size by 1.5 times */
+    border: none;
+  }
+.full>button{
+    font-weight: 600;
+}
+.dark-input{
+    background-color: rgb(25, 32, 45);
+}
+.dark-check[type="checkbox"]{
+    background-color: rgb(18, 23, 33);
+}
+/* Tablet styles (up to 768px) */
+@media only screen and (max-width: 768px) {
+    
+}
+
+/* Phone styles (up to 576px) */
+@media only screen and (max-width: 768px) {
+    .bytitle{
+        width: 100%;
+        border-radius: 10px 10px 10px 10px; 
+
+    }
+}

@@ -1,0 +1,72 @@
+<div class="scoot-main" *ngFor="let job of jobsDetail" [ngClass]="{'dark-companyname': isDarkMode$ | async}">
+  <div class="company-container" [ngClass]="{'dark-company-container': isDarkMode$ | async}">
+    
+    <!-- <div class="company-name" [ngClass]="{'dark-company-name': isDarkMode$ | async}"> -->
+      <img class="company-name" style="background-color: {{job.logoBackground}};" src={{job.logo}} alt="">
+    <!-- </div> -->
+
+    <div class="website" [ngClass]="{'dark-website': isDarkMode$ | async}">
+      <h4>{{ job.company }}</h4>
+      <span>{{ job.company }}.com</span>
+    </div>
+
+    <div class="company-site" [ngClass]="{'dark-company-site': isDarkMode$ | async}">
+      <button>Company Site</button>
+    </div>
+  </div>
+
+  <!-- SECOND PART -->
+
+  <div class="detail-content"  [ngClass]="{'dark-content': isDarkMode$ | async}">
+    <div class="times">
+      <div class="part-time">
+        <span class="at">{{job.postedAt}} . {{job.contract}}</span>
+        <h3 class="position"  [ngClass]="{'dark-position': isDarkMode$ | async}">{{job.position}}</h3>
+        <h5 class="loc">{{job.location}}</h5>
+      </div>
+      <div class="applyNow">
+        <button>Apply Now</button>
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="text"> {{job.description}}</div>
+     
+
+          <br><br>
+          
+       <h3>Requirements</h3>
+       <br>
+      <div class="text">{{job.requirements.content}}</div>
+      
+        <br><br>
+      <div class="text">{{job.requirements.items}}</div>
+        <br>
+
+      <h3>What you will do</h3>
+        <br>
+
+        <div class="text">{{job.role.content}}</div>
+      
+
+        <div class="text">{{job.role.items}}</div>
+        
+        
+      </div>
+  </div>
+
+    <footer [ngClass]="{'dark-footer': isDarkMode$ | async}">
+      <div class="footer">
+        <div class="ftop">
+          <h3>{{job.position}}</h3>
+          <span >So Digital Inc</span>
+        </div>
+        <div class="applyNow">
+          <button [ngClass]="{'dark-bu': isDarkMode$ | async}" class="apbtn"> Apply Now</button>
+        </div>
+      </div>
+    </footer>
+
+
+
+</div>
