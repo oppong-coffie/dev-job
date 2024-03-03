@@ -61,7 +61,11 @@
       <div class="text">{{ job.requirements.content }}</div>
 
       <br /><br />
-      <div class="text">{{ job.requirements.items }}</div>
+      <div class="text">
+        <ul>
+          <li *ngFor="let requirement of job.requirements.items">{{ requirement }}</li>
+        </ul>
+      </div>
       <br />
 
       <h3>What you will do</h3>
@@ -69,7 +73,11 @@
 
       <div class="text">{{ job.role.content }}</div>
 
-      <div class="text">{{ job.role.items }}</div>
+      <div class="text">
+        <ol>
+          <li *ngFor="let role of job.role.items">{{ role }}</li>
+        </ol>
+      </div>
     </div>
   </div>
 
