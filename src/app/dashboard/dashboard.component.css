@@ -1,5 +1,6 @@
-.div{
-
+.body{
+    padding-left: 13%;
+    padding-right: 13%;
 }
 
 .dark-mode{
@@ -7,13 +8,9 @@
 }
 .filters-div{
     margin-top: -30px;
-    margin-left: 200px;
-    margin-right: 200px;
 }
 .jobs{
     margin-top: 100px;
-    margin-left: 170px;
-    margin-right: 140px;
 }
 
 

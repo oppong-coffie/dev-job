@@ -1,31 +1,32 @@
 .container-jobs{
-   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 60px;
+    column-gap: 30px;
 }
 .job1{
     background-color: rgb(255, 255, 255);
-    width: 30%;
     padding-left: 25px;
+    border-radius: 15px;
+    box-shadow: 10px;
+}
+.iconSpan{
 }
 .icon1{
-    border-radius: 5px;
+    padding: 10px;
     margin-top: -15px;
-    padding: 12px;
-    color: white;
-    margin-bottom: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
 
-}
-.container-jobs{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-}
 .dark-companyname{
     background-color: rgb(25, 32, 45);
 }
 .country{
     margin-top: 20px;
     margin-bottom: 40px;
-    color: #531fff;
+    color: #7907fc;
 }
 .dark-card{
     background-color: rgb(25, 32, 45);

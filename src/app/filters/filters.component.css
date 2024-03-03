@@ -1,22 +1,23 @@
 .main-filter{
     display: flex;
-    gap: 1px;
-    
+    gap: 2px;
+    background-color: rgb(244, 246, 248);
+    border-radius: 30px;
 }
 .bytitle{
-    width: 33.33%;
-    border-radius: 10px 0px 0px 10px;
     background-color: white;
+    width: 100%;
+    border-radius: 15px 0px 0px 15px;
 }
 .bylocation{
-        width: 33.33%;
+        width: 100%;
         background-color: white;
 
 }
 .byfulltime{
-        width: 33.33%;
-        border-radius: 0px 10px 10px 0px;
+        width: 100%;
         background-color: white;
+        border-radius: 0px 15px 15px 0px;
 }
 .dark-mode{
     background-color: rgb(25, 32, 45);
@@ -32,7 +33,7 @@ input{
     display: flex;
     justify-content: space-between;
     color:rgb(25, 32, 45);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 .fulltime{

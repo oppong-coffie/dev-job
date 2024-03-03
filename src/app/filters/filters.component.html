@@ -1,11 +1,40 @@
 <div class="main-filter text-secondary">
-    <div class="bytitle p-4" [ngClass]="{'dark-mode': isDarkMode$ | async}"><span><img src="../../assets/desktop/icon-search.svg" alt=""></span> <input  [ngClass]="{'dark-input': isDarkMode$ | async}" class="input" type="text" placeholder="Filter by title, companies, expertise"></div>
-    <div class="bylocation p-4 d-none d-sm-block" [ngClass]="{'dark-mode': isDarkMode$ | async}"> <span><img src="../../assets//desktop/icon-location.svg" alt=""></span><input  [ngClass]="{'dark-input': isDarkMode$ | async}" type="text" placeholder=" Filter by location"></div>
-    <div class="byfulltime p-4 hidden d-none d-sm-block" [ngClass]="{'dark-mode': isDarkMode$ | async}">
-        <div class="full">
-            <div class=""><span><input  [ngClass]="{'dark-check': isDarkMode$ | async}" type="checkbox" name="" id=""> </span><span class="fulltime">Full Time Only</span></div>
-            <button class="btn btn-primary">Search</button>
-        </div>
-      
-        </div>
+  <div class="bytitle p-3" [ngClass]="{ 'dark-mode': isDarkMode$ | async }">
+    <span><img src="../../assets/desktop/icon-search.svg" alt="" /></span>
+    <input
+      [ngClass]="{ 'dark-input': isDarkMode$ | async }"
+      class="input"
+      type="text"
+      placeholder="Filter by title, companies, expertise"
+    />
+  </div>
+  <div
+    class="bylocation p-3 d-none d-sm-block"
+    [ngClass]="{ 'dark-mode': isDarkMode$ | async }"
+  >
+    <span><img src="../../assets//desktop/icon-location.svg" alt="" /></span
+    ><input
+      [ngClass]="{ 'dark-input': isDarkMode$ | async }"
+      type="text"
+      placeholder=" Filter by location"
+    />
+  </div>
+  <div
+    class="byfulltime p-4 hidden d-none d-sm-block"
+    [ngClass]="{ 'dark-mode': isDarkMode$ | async }"
+  >
+    <div class="full">
+      <div class="">
+        <span
+          ><input
+            [ngClass]="{ 'dark-check': isDarkMode$ | async }"
+            type="checkbox"
+            name=""
+            id=""
+          /> </span
+        ><span class="fulltime">Full Time Only</span>
+      </div>
+      <button class="btn btn-primary">Search</button>
+    </div>
+  </div>
 </div>

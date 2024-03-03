@@ -5,7 +5,7 @@
 }
 .company-container{
     display: flex;
-border-radius: 25px;
+border-radius: 5px;
 width: 100%;
 background-color: white;
 }
@@ -18,28 +18,27 @@ background-color: white;
 .company-name{
 width: 17%;
 padding: 27px;
-border-radius: 0px 0px 0px 20px;
+border-radius: 0px 0px 0px 5px;
 }
 
 .website{
     background-color: white;
-    width: 60%;
-    padding-left: 5%;
-    padding-top: 6%;
+    width: 53%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
 }
 .dark-website{
     background-color: rgb(25, 32, 33);
     color: white;
 }
-.com{
-    display: flex;
-}
 
 .company-site{
     background-color: white;
-    width: 20%;
-    border-radius: 0px 15px 15px 0px;
-    padding-top: 7%;
+    width: %;
+    border-radius: 0px 5px 15px 0px;
+    padding-top: 6%;
+    margin-right: 5%;
 }
 .dark-company-site{
     background-color: rgb(25, 32, 33);
@@ -48,12 +47,14 @@ border-radius: 0px 0px 0px 20px;
 
 .company-site>button{
     border: none;
-    background-color: rgb(157, 174, 194);
+    background-color: rgb(244, 246, 248);
     color: rgb(36, 36, 253);
     font-size: 21px;
     font-weight: 600;
     border-radius: 5px;
     padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .info{
     margin-top: 35px;
@@ -76,7 +77,7 @@ border-radius: 0px 0px 0px 20px;
 .detail-content{
     background-color: white;
     margin-top: 32px;
-    padding: 30px;
+    padding: 50px;
 }
 .dark-content{
     background-color: rgb(25, 32, 33);
@@ -85,11 +86,13 @@ border-radius: 0px 0px 0px 20px;
 .applyNow>button{
     border: none;
     color: white;
-    background-color: blue;
+    background-color: rgb(75, 90, 255);
     padding: 8px;
     font-size: 20px;
     font-weight: 600;
     border-radius: 5px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 .dark-mode{
     background-color: rgb(25, 32, 33);
@@ -135,6 +138,15 @@ footer{
     display: flex;
     padding-left: 30%;
     gap: 30%;
+}
+.text{
+    /* font-size: 21px; */
+    font-weight: 600;
+    color: rgb(110, 128, 152);
+}
+.ftop>span{
+    color: rgb(110, 128, 152);
+    width: 600;
 }
 
 /* Tablet styles (up to 768px) */
