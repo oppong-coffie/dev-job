@@ -4,14 +4,17 @@
     row-gap: 60px;
     column-gap: 30px;
 }
+.filter-div{
+    margin-top: -135px;
+    margin-bottom: 90px;
+}
 .job1{
     background-color: rgb(255, 255, 255);
     padding-left: 25px;
     border-radius: 15px;
     box-shadow: 10px;
 }
-.iconSpan{
-}
+
 .icon1{
     padding: 10px;
     margin-top: -15px;
@@ -70,6 +73,18 @@ a{
 @media only screen and (max-width: 576px) {
     .job1{
         width: 100%;
-        padding-left: 40px;
+        padding: 4%;
+        margin-bottom: 45px;
+    }
+    .container-jobs{
+        display: block;
+    }
+    .icon1{
+        padding: 10px;
+        margin-top: -40px;
+        width: 40px;
+        height: 40px;
+        margin-left: 15px;
+        border-radius: 5px;
     }
 }

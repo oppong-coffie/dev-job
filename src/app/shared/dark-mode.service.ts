@@ -5,8 +5,8 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class DarkModeService {
-  private isDarkModeSubject = new BehaviorSubject<boolean>(false);
-  isDarkMode$ = this.isDarkModeSubject.asObservable();
+  isDarkModeSubject = new BehaviorSubject<boolean>(false);
+  isDarkMode$ = this.isDarkModeSubject;
 
   toggleDarkMode() {
     const currentValue = this.isDarkModeSubject.getValue();

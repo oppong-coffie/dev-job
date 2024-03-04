@@ -9,10 +9,17 @@ import { DarkModeService } from '../shared/dark-mode.service';
 })
 export class JobsComponent implements OnInit {
   isDarkMode$ = this.darkModeService.isDarkMode$;
+
+
+
   constructor(private darkModeService: DarkModeService) {}
 
 
-  jobsData: any[] = []; // Declare an array to store the fetched data
+  jobsData:any[]=[] // Declare an array to store the fetched data
+  data:any;
+  location: string = ''
+  fullTimeOny: boolean = true
+  searchTerm: string = ''
 
   // constructor() { }
 
@@ -26,10 +33,30 @@ export class JobsComponent implements OnInit {
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
-      this.jobsData = await response.json(); // Parse JSON response and assign to jobsData
+      this.data=await response.json(); // Parse JSON response and assign to jobsData
+      this.jobsData = this.data
       console.log(this.jobsData); // Log the fetched data
     } catch (error) {
       console.error('Error fetching data:', error.message);
     }
   }
+
+
+  applySearchFilter(eventData: { searchTerm: string, location: string, fullTimeOnly: boolean }) {
+    console.log('Search Term:', eventData);
+
+    if (eventData.searchTerm || eventData.location || eventData.fullTimeOnly) {
+        this.jobsData=this.data.filter((item: { company: string; position: string; contract: string; location: string; }) =>
+                (!eventData.searchTerm || (item.company && item.company.toLowerCase().includes(eventData.searchTerm.toLowerCase())) ||
+                                          (item.position && item.position.toLowerCase().includes(eventData.searchTerm.toLowerCase())) ||
+                                          (item.contract && item.contract.toLowerCase().includes(eventData.searchTerm.toLowerCase()))) &&
+                (!eventData.location || (item.location && item.location.toLowerCase().includes(eventData.location.toLowerCase()))) &&
+                (!eventData.fullTimeOnly || (eventData.fullTimeOnly && item.contract && item.contract.toLowerCase() === 'full time'))
+            );
+
+    }  else {
+        this.jobsData = this.data;
+     }
+}
+
 }

@@ -1,40 +1,48 @@
 <div class="main-filter text-secondary">
   <div class="bytitle p-3" [ngClass]="{ 'dark-mode': isDarkMode$ | async }">
-    <span><img src="../../assets/desktop/icon-search.svg" alt="" /></span>
+    <span><img (click)="onSearchChange()" src="../../assets/desktop/icon-search.svg" alt="" /></span>
     <input
       [ngClass]="{ 'dark-input': isDarkMode$ | async }"
       class="input"
       type="text"
       placeholder="Filter by title, companies, expertise"
+      [(ngModel)]="searchTerm"
     />
+    <div class="icon" (click)="showfilter()">
+      <img src="../../assets/mobile/icon-filter.svg" alt="">
+    </div>
   </div>
+  
   <div
-    class="bylocation p-3 d-none d-sm-block"
-    [ngClass]="{ 'dark-mode': isDarkMode$ | async }"
+    class="bylocation show p-3 "
+    [ngClass]="{ 'dark-mode': isDarkMode$ | async, 'show': show }"
   >
     <span><img src="../../assets//desktop/icon-location.svg" alt="" /></span
     ><input
       [ngClass]="{ 'dark-input': isDarkMode$ | async }"
       type="text"
       placeholder=" Filter by location"
+      [(ngModel)]="location"
     />
   </div>
   <div
-    class="byfulltime p-4 hidden d-none d-sm-block"
-    [ngClass]="{ 'dark-mode': isDarkMode$ | async }"
+    class="byfulltime p-4"
+    [ngClass]="{ 'dark-mode': isDarkMode$ | async, 'show': show }"
   >
     <div class="full">
       <div class="">
         <span
           ><input
             [ngClass]="{ 'dark-check': isDarkMode$ | async }"
+             [(ngModel)]="searchTerm"
             type="checkbox"
-            name=""
-            id=""
-          /> </span
+            [(ngModel)]="fullTimeOnly"
+          /> 
+          </span
         ><span class="fulltime">Full Time Only</span>
       </div>
-      <button class="btn btn-primary">Search</button>
+
+      <button class="btn btn-primary" (click)="onSearchChange()">Search</button>
     </div>
   </div>
 </div>

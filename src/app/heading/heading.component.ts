@@ -13,9 +13,7 @@ export class HeadingComponent {
 
   toggleDarkMode() {
     this.check=!this.check
-    // this.btnimg="../../assets/desktop/icon-toggle.svg"
     this.darkModeService.toggleDarkMode();
     this.btnimg=this.check ? "../../assets/desktop/icon-toggle.svg" : "../../assets/desktop/icon-toggleDark.svg"
-    
   }
 }

@@ -6,9 +6,7 @@
 .dark-mode{
     background-color: black !important;
 }
-.filters-div{
-    margin-top: -30px;
-}
+
 .jobs{
     margin-top: 100px;
 }
@@ -17,6 +15,10 @@
 
 /* Tablet styles (up to 768px) */
 @media only screen and (max-width: 768px) {
+    .body{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
     .filters-div {
         margin-left: 50px;
         margin-right: 50px;
