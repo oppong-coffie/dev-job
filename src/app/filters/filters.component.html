@@ -1,4 +1,4 @@
-<div class="main-filter text-secondary">
+<div class="main-filter text-secondary" [ngClass]="{ 'dark-mode': isDarkMode$ | async }">
   <div class="bytitle p-3" [ngClass]="{ 'dark-mode': isDarkMode$ | async }">
     <span><img (click)="onSearchChange()" src="../../assets/desktop/icon-search.svg" alt="" /></span>
     <input
